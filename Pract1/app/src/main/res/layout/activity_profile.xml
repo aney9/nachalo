@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile"
+    android:background="@drawable/new_fon">
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/exit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/new_buttons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Меню"
+        />
+    <TextView
+        android:id="@+id/view_pol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:padding="16dp"
+        android:textSize="50sp"
+        android:textStyle="italic"
+        />
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:background="@drawable/pika"
+        app:layout_constraintTop_toBottomOf="@+id/view_pol"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        android:text="Вы определенно имеете какое-то имя"
+        android:textAlignment="center"
+        android:padding="16dp"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        />
+    <TextView
+        android:id="@+id/surname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        android:text="Вы определенно имеете какую-то фамилию"
+        android:textAlignment="center"
+        android:padding="16dp"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        />
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/surname"
+        android:text="Вы родились в один из 365(366) дней"
+        android:textAlignment="center"
+        android:padding="16dp"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/settings_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/new_buttons"
+        app:layout_constraintBottom_toTopOf="@+id/exit_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Настройки"
+        />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:background="@drawable/sigma"
+        app:layout_constraintTop_toBottomOf="@+id/age"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
